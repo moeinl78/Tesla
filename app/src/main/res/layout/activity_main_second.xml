@@ -120,6 +120,7 @@
             >
 
             <soup.neumorphism.NeumorphCardView
+                android:id="@+id/secondCard1"
                 android:layout_width="128dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="0dp"
@@ -178,6 +179,7 @@
             </soup.neumorphism.NeumorphCardView>
 
             <soup.neumorphism.NeumorphCardView
+                android:id="@+id/secondCard2"
                 android:layout_width="128dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="0dp"
@@ -236,6 +238,7 @@
             </soup.neumorphism.NeumorphCardView>
 
             <soup.neumorphism.NeumorphCardView
+                android:id="@+id/secondCard3"
                 android:layout_width="128dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="0dp"
@@ -295,6 +298,7 @@
             </soup.neumorphism.NeumorphCardView>
 
             <soup.neumorphism.NeumorphCardView
+                android:id="@+id/secondCard4"
                 android:layout_width="128dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="0dp"
