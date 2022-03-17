@@ -5,12 +5,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/black_200"
+    tools:context=".MainActivity"
+    >
 
     <soup.neumorphism.NeumorphButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CONFIRM"
+        android:text="@string/confirm"
+        android:textColor="@color/white_200"
+        android:padding="24dp"
+        app:neumorph_backgroundColor="@color/black_200"
+        app:neumorph_shadowColorDark="@color/black_300_s"
+        app:neumorph_shadowColorLight="@color/black_100_s"
+        app:neumorph_shapeType="flat"
+        app:neumorph_shadowElevation="4dp"
+        app:neumorph_shapeAppearance="@style/neuButton"
+        app:neumorph_lightSource="leftTop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
