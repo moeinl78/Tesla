@@ -157,11 +157,11 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginBottom="4dp"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintBottom_toTopOf="@+id/secondMainActivityCardSubText"
+                        app:layout_constraintBottom_toTopOf="@+id/secondMainActivityCardSubText1"
                         />
 
                     <TextView
-                        android:id="@+id/secondMainActivityCardSubText"
+                        android:id="@+id/secondMainActivityCardSubText1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sleeping Mode"
@@ -215,11 +215,11 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginBottom="4dp"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintBottom_toTopOf="@+id/secondMainActivityCardSubText"
+                        app:layout_constraintBottom_toTopOf="@+id/secondMainActivityCardSubText2"
                         />
 
                     <TextView
-                        android:id="@+id/secondMainActivityCardSubText"
+                        android:id="@+id/secondMainActivityCardSubText2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="A/C is ON"
@@ -274,11 +274,11 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginBottom="4dp"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintBottom_toTopOf="@+id/secondMainActivityCardSubText"
+                        app:layout_constraintBottom_toTopOf="@+id/secondMainActivityCardSubText3"
                         />
 
                     <TextView
-                        android:id="@+id/secondMainActivityCardSubText"
+                        android:id="@+id/secondMainActivityCardSubText3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Low pressure"
@@ -332,11 +332,11 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginBottom="4dp"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintBottom_toTopOf="@+id/secondMainActivityCardSubText"
+                        app:layout_constraintBottom_toTopOf="@+id/secondMainActivityCardSubText4"
                         />
 
                     <TextView
-                        android:id="@+id/secondMainActivityCardSubText"
+                        android:id="@+id/secondMainActivityCardSubText4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Automatic Mode"
@@ -401,9 +401,10 @@
         app:neumorph_shadowColorDark="@color/black_300_s"
         app:neumorph_shapeAppearance="@style/neuButton"
         app:neumorph_shadowElevation="4dp"
+        app:neumorph_shapeType="basin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:tint="@color/gray_300"
+        app:tint="@color/blue_500"
         />
 
     <soup.neumorphism.NeumorphImageView
@@ -412,7 +413,7 @@
         android:layout_height="64dp"
         android:layout_marginStart="32dp"
         android:layout_marginBottom="8dp"
-        android:src="@drawable/ic_baseline_battery_full_24"
+        android:src="@drawable/ic_baseline_whatshot_24"
         android:padding="20dp"
         app:neumorph_backgroundColor="@color/black_200"
         app:neumorph_shadowColorLight="@color/black_100_s"
