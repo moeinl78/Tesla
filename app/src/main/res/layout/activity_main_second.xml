@@ -96,7 +96,7 @@
     <ImageView
         android:id="@+id/secondMainActivityCybertruckBG"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="256dp"
         android:src="@drawable/img_second_cybertruck"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,6 +104,7 @@
         />
 
     <HorizontalScrollView
+        android:id="@+id/secondMainActivityHorizontalView"
         android:layout_width="match_parent"
         android:layout_height="128dp"
         android:layout_marginStart="24dp"
@@ -136,11 +137,13 @@
                     >
 
                     <ImageView
+                        android:id="@+id/secondMainActivityLighterFirst"
                         android:layout_width="16dp"
                         android:layout_height="16dp"
                         android:src="@drawable/light"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
+                        android:visibility="invisible"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         />
@@ -192,11 +195,13 @@
                     >
 
                     <ImageView
+                        android:id="@+id/secondMainActivityLighterSecond"
                         android:layout_width="16dp"
                         android:layout_height="16dp"
                         android:src="@drawable/light"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
+                        android:visibility="invisible"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         />
@@ -249,11 +254,13 @@
                     >
 
                     <ImageView
+                        android:id="@+id/secondMainActivityLighterThird"
                         android:layout_width="16dp"
                         android:layout_height="16dp"
                         android:src="@drawable/light"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
+                        android:visibility="invisible"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         />
@@ -305,11 +312,13 @@
                     >
 
                     <ImageView
+                        android:id="@+id/secondMainActivityLighterForth"
                         android:layout_width="16dp"
                         android:layout_height="16dp"
                         android:src="@drawable/light"
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="8dp"
+                        android:visibility="invisible"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         />
@@ -346,5 +355,109 @@
         </LinearLayout>
 
     </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="start"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondMainActivityHorizontalView"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Information"
+            android:textColor="@color/white_200"
+            android:textSize="19sp"
+            android:layout_marginStart="32dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ultra-string glass and polymer-layered\n composite can absorb and redirect impact force\n for improved"
+            android:textSize="16sp"
+            android:textColor="@color/gray_300"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            />
+
+    </LinearLayout>
+
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/secondMainActivityBatteryImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_baseline_battery_full_24"
+        android:padding="20dp"
+        app:neumorph_backgroundColor="@color/black_200"
+        app:neumorph_shadowColorLight="@color/black_100_s"
+        app:neumorph_shadowColorDark="@color/black_300_s"
+        app:neumorph_shapeAppearance="@style/neuButton"
+        app:neumorph_shadowElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@color/gray_300"
+        />
+
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/secondMainActivityHeatImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_baseline_battery_full_24"
+        android:padding="20dp"
+        app:neumorph_backgroundColor="@color/black_200"
+        app:neumorph_shadowColorLight="@color/black_100_s"
+        app:neumorph_shadowColorDark="@color/black_300_s"
+        app:neumorph_shapeAppearance="@style/neuButton"
+        app:neumorph_shadowElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/secondMainActivityBatteryImage"
+        app:tint="@color/gray_300"
+        />
+
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/secondMainActivityBottomNavImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_baseline_navigation_24"
+        android:padding="20dp"
+        app:neumorph_backgroundColor="@color/black_200"
+        app:neumorph_shadowColorLight="@color/black_100_s"
+        app:neumorph_shadowColorDark="@color/black_300_s"
+        app:neumorph_shapeAppearance="@style/neuButton"
+        app:neumorph_shadowElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/secondMainActivityHeatImage"
+        app:tint="@color/gray_300"
+        />
+
+    <soup.neumorphism.NeumorphImageView
+        android:id="@+id/secondMainActivityTimerImage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_baseline_timer_24"
+        android:padding="20dp"
+        app:neumorph_backgroundColor="@color/black_200"
+        app:neumorph_shadowColorLight="@color/black_100_s"
+        app:neumorph_shadowColorDark="@color/black_300_s"
+        app:neumorph_shapeAppearance="@style/neuButton"
+        app:neumorph_shadowElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/secondMainActivityBottomNavImage"
+        app:tint="@color/gray_300"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
